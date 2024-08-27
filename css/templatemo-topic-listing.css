@@ -10,7 +10,7 @@ https://templatemo.com/tm-590-topic-listing
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
+  /* --white-color:                  #ffffff; */
   --primary-color:                #13547a;
   --secondary-color:              #80d0c7;
   --section-bg-color:             #f0f8ff;
@@ -489,7 +489,7 @@ strong {
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   position: relative;
   overflow: hidden;
-  padding-top: 150px;
+  padding-top: 77px;
   padding-bottom: 150px;
 }
 
@@ -512,11 +512,18 @@ strong {
 }
 
 .hero-section button[type="submit"] {
-  background-color: var(--primary-color);
+  /* background-color: white; */
+  background-color: #2be2e2;
+    border: 2px solid cyan;
+    color: #fff;
   border: 0;
   border-radius: var(--border-radius-large) !important;
-  color: var(--white-color);
-  max-width: 150px;
+  font-weight: 700;
+  font-size: 20px;
+  /* color: #2F748E; */
+  /* max-width: 150px; */
+  width:20rem;
+  padding: 12px;
 }
 
 
@@ -1153,3 +1160,63 @@ blockquote {
   }
 }
 
+.form-label{
+  font-size: 20px; 
+  font-weight:600;
+  color:#fff;
+}
+.form-control,.form-select{
+  padding: 15px;
+  border-radius: 30px;
+}
+.centerAlign{
+  display: flex;
+  justify-content: center;
+}
+.inquiryButton{
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #13547a;
+  color: #ecf3f2;
+  width: 30rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+.inquiryButton {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inquiryButton:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table thead {
+  background-color: #13547A;
+  color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #e9ecef;
+}
+.status{
+  display: flex;
+}
+.form-style{
+  width: 70rem;
+    background-size: cover;
+    padding: 26px;
+    border: 1px solid #b3b3b37a;
+    border-radius: 40px;
+}
+.justifyContent{
+  text-align: justify;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: rgb(199 255 250 / 38%);
+}
