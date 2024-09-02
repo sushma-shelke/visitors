@@ -130,8 +130,7 @@ https://templatemo.com/tm-590-topic-listing
                                     <div class="col-md-4">
                                         <label for="emailAddress
                     " class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="emailAddress
-                    ">
+                                        <input type="email" class="form-control" id="emailAddress">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="contactNumber" class="form-label">Contact Number</label>
@@ -652,7 +651,27 @@ https://templatemo.com/tm-590-topic-listing
           </div>
         </div>
       </div>
-
+<!-- display ticket number -->
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel" style="color:#9C191E;">Success</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4  style="color:#9C191E;">Your ticket number is : </h4>
+                <p>Please remember this</p>
+                <span id="displayTicketNumber"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal" style="color:#9C191E;">Okay</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
       <!-- Second Modal with User Details in Table -->
       <div
         class="modal fade"
@@ -678,14 +697,14 @@ https://templatemo.com/tm-590-topic-listing
                     <div class="status col-5">
                         <div class="p-3" style="display: inline-flex;">
                           <h5 style="color:#9c191e;">Status :</h5>
-                          <h5 class="" style="color: rgb(255, 169, 32)">&nbsp;Pending</h5>
+                          <h5 class="statusText" style="color: rgb(255, 169, 32)">&nbsp;Pending</h5>
                         </div>
                       </div>
         
                       <div class="col-7">
                         <div class="p-3" style="display: inline-flex;">
                           <h5 style="color:#9c191e;">Meeting Time and Date : </h5>
-                          <h5 class="pl-1" style="color:#6a7474;"> &nbsp;26 Aug , 3:00 PM</h5>
+                          <h5 class="pl-1" style="color:#6a7474;"> &nbsp;29 Aug , 3:00 PM</h5>
                         </div>
                       </div>
                 </div>
@@ -701,57 +720,61 @@ https://templatemo.com/tm-590-topic-listing
                 <tbody>
                   <tr>
                     <td>Full Name</td>
-                    <td id="fullName">John Doe</td>
+                    <td id="fullName1">John Doe</td>
                   </tr>
                   <tr>
                     <td>Email</td>
-                    <td id="emailAddress">john.doe@example.com</td>
+                    <td id="emailAddress1">john.doe@example.com</td>
                   </tr>
                   <tr>
                     <td>Contact Number</td>
-                    <td id="contactNumber">123-456-7890</td>
+                    <td id="contactNumber1">123-456-7890</td>
                   </tr>
                   <tr>
                     <td>Age</td>
-                    <td id="age">30</td>
+                    <td id="age1">30</td>
                   </tr>
                   <tr>
                     <td>Appointment Date</td>
-                    <td id="appointmentDate">2024-08-25</td>
+                    <td id="appointmentDate1">2024-08-25</td>
                   </tr>
                   <tr>
-                    <td>Appointment Time</td>
-                    <td id="appointmentTime">10:00 AM</td>
+                    <td>Appointment Start and End Time</td>
+                    <td id="appointmentTime1">10:00 AM</td>
+                  </tr>
+                  <tr>
+                    <td>meetingDuration</td>
+                    <td id="meetingDuration1">10</td>
                   </tr>
                   <tr>
                     <td>Gender</td>
-                    <td id="gender">Male</td>
+                    <td id="gender1">Male</td>
                   </tr>
                   <tr>
                     <td>Department Name</td>
-                    <td id="departmentName">IT Department</td>
+                    <td id="departmentName1">IT Department</td>
                   </tr>
                   <tr>
                     <td>Organization Name</td>
-                    <td id="organizationName">Tech Corp</td>
+                    <td id="organizationName1">Tech Corp</td>
                   </tr>
                   <tr>
                     <td>Designation</td>
-                    <td id="designation">Software Engineer</td>
+                    <td id="designation1">Software Engineer</td>
                   </tr>
                   <tr>
                     <td>Purpose of Visit</td>
-                    <td id="purposeOfVisit">Technical Consultation</td>
+                    <td id="purposeOfVisit1">Technical Consultation</td>
                   </tr>
                   <tr>
                     <td>Official Address</td>
-                    <td id="officialAddress">
+                    <td id="officialAddress1">
                       123 Tech Street, Silicon Valley
                     </td>
                   </tr>
                   <tr>
                     <td>Grievance Detail</td>
-                    <td id="grievanceDetail">None</td>
+                    <td id="grievanceDetail1">None</td>
                   </tr>
                 </tbody>
               </table>
@@ -935,24 +958,7 @@ https://templatemo.com/tm-590-topic-listing
                         </p>
                     </div>
 
-                   <!-- <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            English</button>
-
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Thai</button></li>
-
-                                <li><button class="dropdown-item" type="button">Myanmar</button></li>
-
-                                <li><button class="dropdown-item" type="button">Arabic</button></li>
-                            </ul>
-                        </div>
-
-                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
-                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-                        
-                    </div>-->
+                
 
                 </div>
             </div>
@@ -985,7 +991,8 @@ https://templatemo.com/tm-590-topic-listing
                 };
             
                 // Send the data to the API
-                fetch('https://mumbailocal.org:8081/addvisitor', {
+                // fetch('http://localhost:8081/addvisitor', {
+                    fetch('https://mumbailocal.org:8081/addvisitor', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -996,6 +1003,13 @@ https://templatemo.com/tm-590-topic-listing
                 .then(data => {
                     // Handle the response data
                     console.log('Success:', data);
+                    const createdUserId = data?.id;
+    // document.getElementById('displayticketNumber').value = createdUserId;
+    
+    // Show the success modal
+    document.getElementById('displayTicketNumber').textContent = createdUserId;
+    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+    successModal.show();
                 })
                 .catch(error => {
                     // Handle errors
@@ -1018,16 +1032,60 @@ https://templatemo.com/tm-590-topic-listing
            document.querySelector("iframe").classList.add("hidden")
           }
         </script>
-    <script>
-        $(document).ready(function () {
-          // When the "Submit" button in the ticket modal is clicked
-          $("#submitTicketNumber").on("click", function () {
-            // Hide the first modal
-            $("#ticketModal").modal("hide");
-            // Show the second modal with the form
-            $("#formModal").modal("show");
-          });
+
+
+      <script>
+        document.getElementById("submitTicketNumber").addEventListener("click", function () {
+          const ticketNumber = document.getElementById("ticketNumber").value;
+        //   const url = `http://localhost:8081/getvisitorbyid/${ticketNumber}`;
+          const url = `https://mumbailocal.org:8081/getvisitorbyid/${ticketNumber}`;
+          
+          fetch(url)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log("Visitor data:", data);
+              if (data) {
+                  const startDateTime = new Date(data.appointmentstartDateTime);
+                const endDateTime = new Date(data.appointmentendDateTime);
+      
+                const appointmentDate = startDateTime.toLocaleDateString();
+                const appointmentTime = startDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                const endTime = endDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                document.querySelector(".col-7 .pl-1").innerHTML = `&nbsp;${appointmentDate} , ${appointmentTime}`;
+
+                document.querySelector(".statusText").innerHTML = `&nbsp;${data?.status || ""}`;
+                document.getElementById("fullName1").textContent = data.fullName || "";
+                document.getElementById("emailAddress1").textContent = data.emailAddress || "";
+                document.getElementById("contactNumber1").textContent = data.contactNumber || "";
+                document.getElementById("age1").textContent = data.age || "";
+                document.getElementById("appointmentDate1").textContent = appointmentDate || "";
+                document.getElementById("appointmentTime1").textContent = appointmentTime + " - " + endTime || "";
+                document.getElementById("meetingDuration1").textContent = data.meetingDuration + " min" || "";
+                document.getElementById("gender1").textContent = data.gender || "";
+                document.getElementById("departmentName1").textContent = data.departmentName || "";
+                document.getElementById("organizationName1").textContent = data.organizationName || "";
+                document.getElementById("designation1").textContent = data.designation || "";
+                document.getElementById("purposeOfVisit1").textContent = data.purposeOfVisit || "";
+                document.getElementById("officialAddress1").textContent = data.officialAddress || "";
+                document.getElementById("grievanceDetail1").textContent = data.grievanceDetails || "";
+      
+                // Show the modal
+                new bootstrap.Modal(document.getElementById('formModal')).show();
+              } else {
+                alert("Please check the ID");
+                $("#formModal").modal("hide");
+              }
+            })
+            .catch(error => {
+              console.error("There was a problem with the fetch operation:", error);
+            });
         });
       </script>
+    
     </body>
 </html>
