@@ -71,9 +71,16 @@ https://templatemo.com/tm-590-topic-listing
                                 <a class="nav-link click-scroll" href="#section_5">Contact</a>
                             </li>
 
-                            <li class="nav-item">
-                                <div id="google_translate_element"></div>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Language
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="indexhindi.html">हिंदी</a></li>
+                                    <li><a class="dropdown-item" href="index.html">English</a></li>
+                                </ul>
+        </ul>
+    </li>
                            
                         </ul>
 
@@ -1017,20 +1024,6 @@ https://templatemo.com/tm-590-topic-listing
             });
         </script>
         
-        <!-- google translate script -->
-        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-        </script>
-        <script>
-          function googleTranslateElementInit(lang) {
-            new google.translate.TranslateElement({
-              pageLanguage: 'en',
-              includedLanguages: `mr,en,hi`,
-              layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-           document.querySelector(".goog-te-gadget-icon").remove()
-           document.querySelector("iframe").classList.add("hidden")
-          }
-        </script>
 
 
       <script>
