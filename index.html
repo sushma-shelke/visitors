@@ -702,7 +702,7 @@ https://templatemo.com/tm-590-topic-listing
                 <div class="row">
                     <div class="status col-5">
                         <div class="p-3" style="display: inline-flex;">
-                          <h5 style="color:#9c191e;">Status :</h5>
+                          <h5 style="color:#9c191e;">Request Status :</h5>
                           <h5 class="statusText" style="color: rgb(255, 169, 32)">&nbsp;Pending</h5>
                         </div>
                       </div>
@@ -724,6 +724,18 @@ https://templatemo.com/tm-590-topic-listing
                   </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Meeting Status</td>
+                        <td id="meetingStatus">pending</td>
+                      </tr>
+                      <tr>
+                        <td>Minister Remark</td>
+                        <td id="remark">pending</td>
+                      </tr>
+                      <tr>
+                        <td>Admin Remark</td>
+                        <td id="adminRemark">pending</td>
+                      </tr>
                   <tr>
                     <td>Full Name</td>
                     <td id="fullName1">John Doe</td>
@@ -1029,8 +1041,8 @@ https://templatemo.com/tm-590-topic-listing
       <script>
         document.getElementById("submitTicketNumber").addEventListener("click", function () {
           const ticketNumber = document.getElementById("ticketNumber").value;
-        //   const url = `http://localhost:8081/getvisitorbyid/${ticketNumber}`;
-          const url = `https://mumbailocal.org:8081/getvisitorbyid/${ticketNumber}`;
+          const url = `http://localhost:8081/getvisitorbyid/${ticketNumber}`;
+        //   const url = `https://mumbailocal.org:8081/getvisitorbyid/${ticketNumber}`;
           
           fetch(url)
             .then(response => {
@@ -1051,6 +1063,7 @@ https://templatemo.com/tm-590-topic-listing
                 document.querySelector(".col-7 .pl-1").innerHTML = `&nbsp;${appointmentDate} , ${appointmentTime}`;
 
                 document.querySelector(".statusText").innerHTML = `&nbsp;${data?.status || ""}`;
+                document.getElementById("meetingStatus").textContent=data.meetingStatus||"";
                 document.getElementById("fullName1").textContent = data.fullName || "";
                 document.getElementById("emailAddress1").textContent = data.emailAddress || "";
                 document.getElementById("contactNumber1").textContent = data.contactNumber || "";
@@ -1065,6 +1078,8 @@ https://templatemo.com/tm-590-topic-listing
                 document.getElementById("purposeOfVisit1").textContent = data.purposeOfVisit || "";
                 document.getElementById("officialAddress1").textContent = data.officialAddress || "";
                 document.getElementById("grievanceDetail1").textContent = data.grievanceDetails || "";
+                document.getElementById("remark").textContent= data.remark||"";
+                document.getElementById("adminRemark").textContent= data.adminRemark||"";
       
                 // Show the modal
                 new bootstrap.Modal(document.getElementById('formModal')).show();
