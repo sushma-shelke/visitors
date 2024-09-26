@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="hi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>विज़िटर ऐप</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">      
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                       <img src="./images/logo.png" height="56px">
+                        
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="टॉगल नेविगेशन">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">होम</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">फायदे</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">अपनी जानकारी जांचें</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">अक्सर पूछे जाने वाले सवाल</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">संपर्क करें</a>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <div id="google_translate_element"></div>
+                            </li> -->
+
+                            <!-- New dropdown menu -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    भाषा
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #9C191E;">
+                                    <li style="color: #fff;"><a class="dropdown-item" href="indexhindi.html">हिंदी</a></li>
+                                    <li  style="color: #fff;"><a class="dropdown-item" href="index.html">English</a></li>
+                                </ul>
+        </ul>
+    </li>
+</ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/Slider hindi.png" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/visitors application banner image-hindi.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">पिछला</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">अगला</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="featured-section bg-white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 mb-4 mb-lg-0">
+                            <div class="custom-block shadow-lg" style="background: linear-gradient(#9c191e80, #9c191e80), url('./images/formbgImage.jpeg') ;background-size:cover;border-radius:45px">
+                                <form class="row g-3 pt-5 mt-5" id="userFormData">
+                                    <div class="col-md-4">
+                                        <label for="fullName" class="form-label">पूरा नाम</label>
+                                        <input type="text" class="form-control" id="fullName">
+                                    </div>
+                    
+                                    <div class="col-md-4">
+                                        <label for="emailAddress" class="form-label">ईमेल</label>
+                                        <input type="email" class="form-control" id="emailAddress">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="contactNumber" class="form-label">संपर्क नंबर</label>
+                                        <input type="number" class="form-control" id="contactNumber">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="age" class="form-label">उम्र</label>
+                                        <input type="number" class="form-control" id="age">
+                                    </div>
+                    
+                                    <div class="col-md-4">
+                                        <label for="gender" class="form-label">लिंग</label><br>
+                                        <select class="form-select" id="gender" name="gender">
+                                            <option value="male">पुरुष</option>
+                                            <option value="female">महिला</option>
+                                            <option value="nonBinary">नॉन-बाइनरी</option>
+                                            <option value="transMale">ट्रांस पुरुष</option>
+                                            <option value="transFemale">ट्रांस महिला</option>
+                                            <option value="preferNotToSay">कहना नहीं चाहेंगे</option>
+                                            <option value="other">अन्य</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="departmentName" class="form-label">विभाग का नाम</label>
+                                        <input type="text" class="form-control" id="departmentName">
+                                    </div>
+                    
+                                    <div class="col-md-4">
+                                        <label for="organizationName" class="form-label">संगठन का नाम</label>
+                                        <input type="text" class="form-control" id="organizationName">
+                                    </div>
+                    
+                                    <div class="col-md-4">
+                                        <label for="designation" class="form-label">पद</label>
+                                        <input type="text" class="form-control" id="designation">
+                                    </div>
+                    
+                                    <div class="col-6">
+                                        <label for="officialAddress" class="form-label">आधिकारिक पता</label>
+                                        <input type="text" class="form-control" id="officialAddress" placeholder="आपका पता">
+                                    </div>
+                    
+                                    <div class="col-6">
+                                        <label for="grievanceDetails" class="form-label">शिकायत का विवरण</label>
+                                        <input type="text" class="form-control" id="grievanceDetails" placeholder="">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="purposeOfVisit" class="form-label">आने का उद्देश्य</label>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="यहां टिप्पणी छोड़ें" id="purposeOfVisit" style="height: 100px"></textarea>
+                                            <label for="purpose_of_visit"></label>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-12 centerAlign pt-2 mb-3">
+                                        <button type="submit" class="inquiryButton btn btn-primary submitFormButton" id="submit">जमा करें</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                            
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="explore-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4">ऑनलाइन प्रक्रिया के लाभ</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                     
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">बिना कागज के चेक-इन</h5>
+                                                            <p class="mb-0 justifyContent">विज़िटर मैनेजमेंट सिस्टम अतिथियों को डिजिटल रूप से चेक-इन करने की सुविधा देता है, जिससे समय लेने वाले कागजी काम की ज़रूरत नहीं रहती। यह सॉफ़्टवेयर आपके अतिथियों को एक प्रोफेशनल छाप भी देता है।</p></div>
+
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">सूचनाएं</h5>
+
+                                                                <p class="mb-0 justifyContent">जब अतिथि आते हैं, तो विज़िटर मैनेजमेंट सिस्टम होस्ट को सूचित करता है, जिससे उन्हें ढूंढने में समय बर्बाद नहीं होता। जैसे ही विज़िटर चेक-इन करता है, होस्ट को तुरंत एक नोटिफिकेशन मिल जाता है, जिससे समय की बचत होती है।</p>                                 </div> 
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">निमंत्रण भेजें</h5>
+
+                                                                <p class="mb-0 justifyContent">अपने अतिथि  को उनकी आने से पहले निमंत्रण भेजें। निमंत्रण में स्थान और मेज़बान की जानकारी होती है।</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="topics-detail.html">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">विज्ञापन देना</h5>
+
+                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                            </div>
+
+                                                            <span class="badge bg-advertising rounded-pill ms-auto">30</span>
+                                                        </div>
+
+                                                        <img src="images/topics/undraw_online_ad_re_ol62.png" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="topics-detail.html">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">वीडियो सामग्री</h5>
+
+                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                            </div>
+
+                                                            <span class="badge bg-advertising rounded-pill ms-auto">65</span>
+                                                        </div>
+
+                                                        <img src="images/topics/undraw_Group_video_re_btu7.png" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-12">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="topics-detail.html">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">वायरल ट्वीट</h5>
+
+                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                            </div>
+
+                                                            <span class="badge bg-advertising rounded-pill ms-auto">50</span>
+                                                        </div>
+
+                                                        <img src="images/topics/undraw_viral_tweet_gndb.png" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+
+                                <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab" tabindex="0">   <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">निवेश</h5>
+
+                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                        </div>
+
+                                                        <span class="badge bg-finance rounded-pill ms-auto">30</span>
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_Finance_re_gnv2.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="custom-block custom-block-overlay">
+                                                <div class="d-flex flex-column h-100">
+                                                    <img src="images/businesswoman-using-tablet-analysis-graph-company-finance-strategy-statistics-success-concept-planning-future-office-room.jpg" class="custom-block-image img-fluid" alt="">
+
+                                                    <div class="custom-block-overlay-text d-flex">
+                                                        <div>
+                                                            <h5 class="text-white mb-2">वित्त</h5>
+
+                                                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis</p>
+
+                                                            <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                                        </div>
+
+                                                        <span class="badge bg-finance rounded-pill ms-auto">25</span>
+                                                    </div>
+
+                                                    <div class="social-share d-flex">
+                                                        <p class="text-white me-4">शेयर:</p>
+
+                                                        <ul class="social-icon">
+                                                            <li class="social-icon-item">
+                                                                <a href="#" class="social-icon-link bi-twitter"></a>
+                                                            </li>
+
+                                                            <li class="social-icon-item">
+                                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                                            </li>
+
+                                                            <li class="social-icon-item">
+                                                                <a href="#" class="social-icon-link bi-pinterest"></a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
+                                                    </div>
+
+                                                    <div class="section-overlay"></div>
+                                                </div>
+                                            </div>0
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">गीत रचना</h5>
+
+                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                        </div>
+
+                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_Compose_music_re_wpiw.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">ऑनलाइन संगीत</h5>
+
+                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                        </div>
+
+                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_happy_music_g6wc.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2"> पॉडकास्ट</h5>
+
+                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                        </div>
+
+                                                        <span class="badge bg-music rounded-pill ms-auto">20</span>
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_Podcast_audience_re_4i5q.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">स्नातक</h5>
+
+                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                        </div>
+
+                                                        <span class="badge bg-education rounded-pill ms-auto">80</span>
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_Graduation_re_gthn.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">शिक्षक</h5>
+
+                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                        </div>
+
+                                                        <span class="badge bg-education rounded-pill ms-auto">75</span>
+                                                    </div>
+
+                                                    <img src="images/topics/undraw_Educator_re_ju47.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="timeline-section section-padding" id="section_3">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- inquiry section start -->
+      <!-- Main Modal for Ticket Number -->
+      <div class="text-center pt-5" style="justify-content: center">
+        <h2 for="floatingInput" style=" color: #fff">
+            यदि आपने पहले ही फॉर्म भर दिया है, तो अपना विवरण यहां जांचें </h2>
+      </div>
+
+      <div class="col-12 text-center pt-3 pb-5">
+        <button
+          type="button"
+          class="btn custom-btn custom-border-btn ms-3"
+          data-bs-toggle="modal"
+          data-bs-target="#ticketModal"
+        >
+        अपना विवरण यहां जांचें
+        </button>
+      </div>
+
+      <!-- Ticket Number Modal -->
+      <div
+        class="modal fade"
+        id="ticketModal"
+        tabindex="-1"
+        aria-labelledby="ticketModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <!-- Increased width by using modal-lg -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ticketModalLabel" style="color:#9C191E;">
+                टिकट नंबर दर्ज करें
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="ticketNumber" class="form-label"
+                  >टिकट नंबर</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ticketNumber"
+                  placeholder="अपना टिकट नंबर दर्ज करें"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn custom-btn custom-border-btn ms-3"
+                id="submitTicketNumber"
+                style="color: #9C191E; border:1px solid #9c191e"
+              >
+              जमा करना
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- display ticket number -->
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel" style="color:#9C191E;">सफलता</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4  style="color:#9C191E;">आपका टिकट नंबर है:</h4>
+                <p>कृपया इसे याद रखें</p>
+                <span id="displayTicketNumber"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal" style="color:#9C191E;">ठीक है</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+      <!-- Second Modal with User Details in Table -->
+      <div
+        class="modal fade"
+        id="formModal"
+        tabindex="-1"
+        aria-labelledby="formModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <!-- Increased width by using modal-xl -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="formModalLabel" style="color:#9c191e;">उपयोगकर्ता विवरण</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="status col-5">
+                        <div class="p-3" style="display: inline-flex;">
+                          <h5 style="color:#9c191e;">याचिका की स्थिति :
+                        </h5>
+                          <h5 class="statusText" style="color: rgb(255, 169, 32)">&nbsp;लंबित</h5>
+                        </div>
+                      </div>
+        
+                      <div class="col-7">
+                        <div class="p-3" style="display: inline-flex;">
+                          <h5 style="color:#9c191e;">बैठक का समय और तिथि : </h5>
+                          <h5 class="pl-1" style="color:#6a7474;"> &nbsp;29 अगस्त, 3:00 </h5>
+                        </div>
+                      </div>
+                </div>
+              
+                <table class="table table-striped table-hover table-bordered">
+                    <!-- <thead style="background:#9c191e">
+                        <tr>
+                            <th scope="col">क्षेत्र</th>
+                            <th scope="col">विवरण</th>
+                        </tr>
+                    </thead> -->
+                    <tbody>
+                        <tr>
+                            <td>मीटिंग की स्थिति</td>
+                            <td id="meetingStatus">pending</td>
+                          </tr>
+                          <tr>
+                            <td>मंत्रीजी की टिप्पणी</td>
+                            <td id="remark">pending</td>
+                          </tr>
+                          <tr>
+                            <td>एडमिन टिप्पणी</td>
+                            <td id="adminRemark">pending</td>
+                          </tr>
+                        <tr>
+                            <td>पूरा नाम</td>
+                            <td id="fullName1">John Doe</td>
+                        </tr>
+                        <tr>
+                            <td>ईमेल</td>
+                            <td id="emailAddress1">john.doe@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>संपर्क नंबर</td>
+                            <td id="contactNumber1">123-456-7890</td>
+                        </tr>
+                        <tr>
+                            <td>उम्र</td>
+                            <td id="age1">30</td>
+                        </tr>
+                        <tr>
+                            <td>अपॉइंटमेंट की तिथि</td>
+                            <td id="appointmentDate1">2024-08-25</td>
+                        </tr>
+                        <tr>
+                            <td>अपॉइंटमेंट का समय</td>
+                            <td id="appointmentTime1">10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>बैठक की अवधि</td>
+                            <td id="meetingDuration1">10 मिनट</td>
+                        </tr>
+                        <tr>
+                            <td>लिंग</td>
+                            <td id="gender1">पुरुष</td>
+                        </tr>
+                        <tr>
+                            <td>विभाग का नाम</td>
+                            <td id="departmentName1">आईटी विभाग</td>
+                        </tr>
+                        <tr>
+                  <tr>
+                    <td>संगठन का नाम</td>
+                    <td id="organizationName1">टेक कार्पोरेशन</td>
+                  </tr>
+                  <tr>
+                    <td>पद का नाम</td>
+                    <td id="designation1">सॉफ्टवेयर इंजीनियर</td>
+                  </tr>
+                  <tr>
+                    <td>आने का उद्देश्य</td>
+                    <td id="purposeOfVisit1">तकनीकी परामर्श</td>
+                  </tr>
+                  <tr>
+                    <td>आधिकारिक पता</td>
+                    <td id="officialAddress1">
+                        123 टेक स्ट्रीट, सिलिकॉन वैली
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>शिकायत का विवरण</td>
+                    <td id="grievanceDetail1">कोई नहीं</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- inquiry section end -->
+                        
+
+            </section>
+
+
+            <section class="faq-section section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">अक्सर पूछे जाने वाले सवाल</h2>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-5 col-12">
+                            <img src="images/faq_graphic.jpg" class="img-fluid" alt="FAQs">
+                        </div>
+
+                        <div class="col-lg-6 col-12 m-auto">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        मैं किसी मंत्री के साथ बैठक कैसे निर्धारित करूं?                                        </button>
+                                    </h2>
+
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        मीटिंग शेड्यूल करने के लिए, वेबसाइट में पूछताछ फॉर्म भरें। एक बार सबमिट करने के बाद, आपका अनुरोध समीक्षा के लिए मंत्री के डैशबोर्ड पर चला जाता है, और आपको इसकी स्थिति के बारे में सूचनाएं प्राप्त होंगी।
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            फॉर्म जमा करने के बाद प्रतिक्रिया प्राप्त होने में कितना समय लगता है?
+
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        प्रतिक्रिया समय अलग-अलग हो सकता है, लेकिन आप आमतौर पर 3-5 व्यावसायिक दिनों के भीतर अधिसूचना प्राप्त करने की उम्मीद कर सकते हैं।                 </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    क्या मैं सबमिट करने के बाद अपना अनुरोध संपादित कर सकता हूँ?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        एक बार सबमिट करने के बाद, आप अपना अनुरोध संपादित नहीं कर सकते। यदि आपको परिवर्तन करने की आवश्यकता है, तो कृपया प्रदान की गई संपर्क जानकारी के माध्यम से सीधे मंत्री के कार्यालय से संपर्क करें।</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            क्या पूछताछ के लिए सीधे कार्यालय से संपर्क करने का कोई तरीका है?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            हां, आप वेबसाइट पर दी गई संपर्क जानकारी का उपयोग करके सीधे कार्यालय से संपर्क कर सकते हैं। हालाँकि, नियुक्तियों को शेड्यूल करने के लिए, ऑनलाइन फॉर्म का उपयोग करने की अनुशंसा की जाती है।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section section-padding section-bg" id="section_5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-5">संपर्क में रहो</h2>
+                        </div>
+
+                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.521863230046!2d73.81171567423871!3d18.562271382539315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf37149aaaab%3A0x750091167f224e09!2sKIT%20Intellect!5e0!3m2!1sen!2sus!4v1725606865900!5m2!1sen!2sus" width="500" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        
+
+                        <div class="col-lg-7 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto" style="
+                        margin-right: -60px;"
+                    >
+                            <h4 class="mb-3">प्रधान कार्यालय</h4>
+
+                            <p>केआईटी इंटेलेक्ट टेक्नोलॉजीज प्राइवेट लिमिटेड
+                                9, रिंग रोड, भीकमचंद जैन नगर, प्रताप नगर, जलगांव, महाराष्ट्र 425001</p>
+
+                            <hr>
+
+                            <p class="d-flex align-items-center mb-1">
+                                <span class="me-2">फ़ोन</span>
+
+                                <a href="tel: 305-240-9671" class="site-footer-link">
+                                    +918459172859
+                                </a>
+                            </p>
+
+                            <p class="d-flex align-items-center">
+                                <span class="me-2">ईमेल</span>
+
+                                <a href="mailto:info@shgeshop.com" class="site-footer-link">
+                                    info@shgeshop.com
+                                </a>
+                            </p>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+<footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+                            <img src="./images/image (1).png" >
+                            
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">संसाधन</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">होम</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#section_4" class="site-footer-link">पूछे जाने वाले प्रश्न</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#section_5" class="site-footer-link">संपर्क</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">जानकारी</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                +918459172859
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:info@shgeshop.com" class="site-footer-link">
+                                info@shgeshop.com
+                            </a>
+                        </p>
+                    </div>
+
+                
+
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            document.getElementById('userFormData').addEventListener('submit', function(e) {
+                e.preventDefault();
+            
+                // Gather form data
+                const formData = {
+                    fullName: document.getElementById('fullName').value,
+                    emailAddress: document.getElementById('emailAddress').value,
+                    contactNumber: document.getElementById('contactNumber').value,
+                    age: document.getElementById('age').value,
+                    gender: document.getElementById('gender').value,
+                    departmentName: document.getElementById('departmentName').value,
+                    organizationName: document.getElementById('organizationName').value,
+                    designation: document.getElementById('designation').value,
+                    officialAddress: document.getElementById('officialAddress').value,
+                    grievanceDetails: document.getElementById('grievanceDetails').value,
+                    purposeOfVisit: document.getElementById('purposeOfVisit').value
+                };
+            
+                // Send the data to the API
+                // fetch('http://localhost:8081/addvisitor', {
+                    fetch('https://mumbailocal.org:8081/addvisitor', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle the response data
+                    console.log('Success:', data);
+                    const createdUserId = data?.id;
+    // document.getElementById('displayticketNumber').value = createdUserId;
+    
+    // Show the success modal
+    document.getElementById('displayTicketNumber').textContent = createdUserId;
+    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+    successModal.show();
+                })
+                .catch(error => {
+                    // Handle errors
+                    console.error('Error:', error);
+                });
+            });
+        </script>
+        
+
+
+
+      <script>
+        document.getElementById("submitTicketNumber").addEventListener("click", function () {
+          const ticketNumber = document.getElementById("ticketNumber").value;
+        //   const url = `http://localhost:8081/getvisitorbyid/${ticketNumber}`;
+          const url = `https://mumbailocal.org:8081/getvisitorbyid/${ticketNumber}`;
+          
+          fetch(url)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log("Visitor data:", data);
+              if (data) {
+                  const startDateTime = new Date(data.appointmentstartDateTime);
+                const endDateTime = new Date(data.appointmentendDateTime);
+      
+                const appointmentDate = startDateTime.toLocaleDateString();
+                const appointmentTime = startDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                const endTime = endDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                document.querySelector(".col-7 .pl-1").innerHTML = `&nbsp;${appointmentDate} , ${appointmentTime}`;
+
+                document.querySelector(".statusText").innerHTML = `&nbsp;${data?.status || ""}`;
+                document.getElementById("meetingStatus").textContent = data.meetingStatus || "";
+                document.getElementById("fullName1").textContent = data.fullName || "";
+                document.getElementById("emailAddress1").textContent = data.emailAddress || "";
+                document.getElementById("contactNumber1").textContent = data.contactNumber || "";
+                document.getElementById("age1").textContent = data.age || "";
+                document.getElementById("appointmentDate1").textContent = appointmentDate || "";
+                document.getElementById("appointmentTime1").textContent = appointmentTime + " - " + endTime || "";
+                document.getElementById("meetingDuration1").textContent = data.meetingDuration + " min" || "";
+                document.getElementById("gender1").textContent = data.gender || "";
+                document.getElementById("departmentName1").textContent = data.departmentName || "";
+                document.getElementById("organizationName1").textContent = data.organizationName || "";
+                document.getElementById("designation1").textContent = data.designation || "";
+                document.getElementById("purposeOfVisit1").textContent = data.purposeOfVisit || "";
+                document.getElementById("officialAddress1").textContent = data.officialAddress || "";
+                document.getElementById("grievanceDetail1").textContent = data.grievanceDetails || "";
+                document.getElementById("remark").textContent= data.remark||"";
+                document.getElementById("adminRemark").textContent= data.adminRemark||"";
+                // Show the modal
+                new bootstrap.Modal(document.getElementById('formModal')).show();
+              } else {
+                alert("Please check the ID");
+                $("#formModal").modal("hide");
+              }
+            })
+            .catch(error => {
+              console.error("There was a problem with the fetch operation:", error);
+            });
+        });
+      </script>
+    
+    </body>
+</html>
