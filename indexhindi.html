@@ -73,9 +73,9 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     भाषा
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="indexhindi.html">हिंदी</a></li>
-                                    <li><a class="dropdown-item" href="index.html">English</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #9C191E;">
+                                    <li style="color: #fff;"><a class="dropdown-item" href="indexhindi.html">हिंदी</a></li>
+                                    <li  style="color: #fff;"><a class="dropdown-item" href="index.html">English</a></li>
                                 </ul>
         </ul>
     </li>
@@ -185,47 +185,7 @@
                                 </form>
                             </div>
                         </div>
-                              <!--  <div class="col-lg-6 col-12">
-                            <div class="custom-block custom-block-overlay">
-                                <div class="d-flex flex-column h-100">
-                                    <img src="images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="">
-
-                                    <div class="custom-block-overlay-text d-flex">
-                                        <div>
-                                            <h5 class="text-white mb-2">Finance</h5>
-
-                                            <p class="text-white">Topic Listing Template includes homepage, listing page, detail page, and contact page. You can feel free to edit and adapt for your CMS requirements.</p>
-
-                                            <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
-                                        </div>
-
-                                        <span class="badge bg-finance rounded-pill ms-auto">25</span>
-                                    </div>
-
-                                    <div class="social-share d-flex">
-                                        <p class="text-white me-4">Share:</p>
-
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-pinterest"></a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
-                                    </div>
-
-                                    <div class="section-overlay"></div>
-                                </div>
-                            </div>
-                        </div> -->
+                            
 
                     </div>
                 </div>
@@ -245,27 +205,7 @@
 
                 <div class="container-fluid">
                     <div class="row">
-                        <!--<ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="true">Design</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">Marketing</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane" type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">Finance</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane" type="button" role="tab" aria-controls="music-tab-pane" aria-selected="false">Music</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Education</button>
-                            </li>
-                        </ul> -->
+                     
                     </div>
                 </div>
 
@@ -667,7 +607,8 @@
                 <div class="row">
                     <div class="status col-5">
                         <div class="p-3" style="display: inline-flex;">
-                          <h5 style="color:#9c191e;">स्थिति :</h5>
+                          <h5 style="color:#9c191e;">याचिका की स्थिति :
+                        </h5>
                           <h5 class="statusText" style="color: rgb(255, 169, 32)">&nbsp;लंबित</h5>
                         </div>
                       </div>
@@ -681,13 +622,25 @@
                 </div>
               
                 <table class="table table-striped table-hover table-bordered">
-                    <thead style="background:#9c191e">
+                    <!-- <thead style="background:#9c191e">
                         <tr>
                             <th scope="col">क्षेत्र</th>
                             <th scope="col">विवरण</th>
                         </tr>
-                    </thead>
+                    </thead> -->
                     <tbody>
+                        <tr>
+                            <td>मीटिंग की स्थिति</td>
+                            <td id="meetingStatus">pending</td>
+                          </tr>
+                          <tr>
+                            <td>मंत्रीजी की टिप्पणी</td>
+                            <td id="remark">pending</td>
+                          </tr>
+                          <tr>
+                            <td>एडमिन टिप्पणी</td>
+                            <td id="adminRemark">pending</td>
+                          </tr>
                         <tr>
                             <td>पूरा नाम</td>
                             <td id="fullName1">John Doe</td>
@@ -850,7 +803,9 @@
                         
                         
 
-                        <div class="col-lg-7 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+                        <div class="col-lg-7 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto" style="
+                        margin-right: -60px;"
+                    >
                             <h4 class="mb-3">प्रधान कार्यालय</h4>
 
                             <p>केआईटी इंटेलेक्ट टेक्नोलॉजीज प्राइवेट लिमिटेड
@@ -902,11 +857,11 @@
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">पूछे जाने वाले प्रश्न</a>
+                                <a href="#section_4" class="site-footer-link">पूछे जाने वाले प्रश्न</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">संपर्क</a>
+                                <a href="#section_5" class="site-footer-link">संपर्क</a>
                             </li>
                         </ul>
                     </div>
@@ -1015,6 +970,7 @@
                 document.querySelector(".col-7 .pl-1").innerHTML = `&nbsp;${appointmentDate} , ${appointmentTime}`;
 
                 document.querySelector(".statusText").innerHTML = `&nbsp;${data?.status || ""}`;
+                document.getElementById("meetingStatus").textContent = data.meetingStatus || "";
                 document.getElementById("fullName1").textContent = data.fullName || "";
                 document.getElementById("emailAddress1").textContent = data.emailAddress || "";
                 document.getElementById("contactNumber1").textContent = data.contactNumber || "";
@@ -1029,7 +985,8 @@
                 document.getElementById("purposeOfVisit1").textContent = data.purposeOfVisit || "";
                 document.getElementById("officialAddress1").textContent = data.officialAddress || "";
                 document.getElementById("grievanceDetail1").textContent = data.grievanceDetails || "";
-      
+                document.getElementById("remark").textContent= data.remark||"";
+                document.getElementById("adminRemark").textContent= data.adminRemark||"";
                 // Show the modal
                 new bootstrap.Modal(document.getElementById('formModal')).show();
               } else {
